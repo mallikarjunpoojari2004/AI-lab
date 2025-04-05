@@ -1,0 +1,52 @@
+a) Write a python program to implement List Operations(Nested List, Length, Concatenation, Membership, Iteration, Indexing & Slicing).
+
+list=[[1,2,3],[4,5,6],[7,8,9]]
+print(list)
+length=len(list)
+print('length of the list:',length)
+list1=[1,2,3]
+list2=[4,5,6]
+concatenated_list=list1+list2
+print(concatenated_list)
+print(2 in list1)
+print(3  in list2)
+for i in list2:
+    print(i)
+fruits=['A','B','C']
+x=fruits.index('C')
+print(x)
+list=[12,34,54,6,76,565,565,76,]
+print(list[1:6])
+
+output:
+
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+length of the list: 3
+[1, 2, 3, 4, 5, 6]
+True
+False
+4
+5
+6
+2
+[34, 54, 6, 76, 565]
+
+b) write a python program to implement List methods(Add,Append,Extend & Delete).
+
+fruits=['apple','banana','cherry','grapee']
+print(fruits)
+fruits.insert(3,'orange')
+print(fruits)
+fruits.append('mango')
+print(fruits)
+fruits.extend([4,5,6])
+print(fruits)
+fruits.remove('banana')
+print(fruits)
+
+output:
+['apple', 'banana', 'cherry', 'grapee']
+['apple', 'banana', 'cherry', 'orange', 'grapee']
+['apple', 'banana', 'cherry', 'orange', 'grapee', 'mango']
+['apple', 'banana', 'cherry', 'orange', 'grapee', 'mango', 4, 5, 6]
+['apple', 'cherry', 'orange', 'grapee', 'mango', 4, 5, 6]
