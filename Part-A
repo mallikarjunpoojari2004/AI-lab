@@ -1,0 +1,53 @@
+1 a) Write a python program to print the multiplication table for the given number
+
+num=87
+for i in range(1,11):
+    print(num,'x',i,'=',num*i)
+
+output:
+87 x 1 = 87
+87 x 2 = 174
+87 x 3 = 261
+87 x 4 = 348
+87 x 5 = 435
+87 x 6 = 522
+87 x 7 = 609
+87 x 8 = 696
+87 x 9 = 783
+87 x 10 = 870
+
+
+b) Write a  python program to check whether a given number is prime or not?
+
+num=13
+if num>1:
+    for i in range(2,int(num/2)+1):
+        if(num%i)==0:
+            print(num,"is not a prime num")
+            break
+        else:
+            print(num,"is  a prime num")
+            break
+else:
+    print(num,"is not a prime num")
+
+output:
+13 is  a prime num
+
+
+c) Python program to find the factorial of a number provided by the user.
+
+num=int(input('enter the number:'))
+fact=1
+for i in range(1,num+1):
+    fact=fact*i
+    print("The factorial of 23 is:",fact)
+    
+output:
+enter the number:4
+The factorial of 23 is: 1
+The factorial of 23 is: 2
+The factorial of 23 is: 6
+The factorial of 23 is: 24
+
+    
