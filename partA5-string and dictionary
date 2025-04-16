@@ -1,0 +1,64 @@
+5. (a) Write a python program to implement a function that counts the number of times a string (s1) occurs in another string(s2)  
+Software used: Jupyter notebook 
+Code: 
+def count_occurrences(main_string, substring): 
+    count = 0 
+    start_index = 0 
+    while start_index < len(main_string): 
+        index = main_string.find(substring, start_index) 
+        if index == -1: 
+            break 
+        count += 1 
+        start_index = index + 1 
+    return count 
+ 
+# Example usage: 
+main_string = "ababababab ab ab" 
+substring = "ab" 
+result = count_occurrences(main_string, substring) 
+ 
+print(f"The substring '{substring}' occurs {result} times in the main string.") 
+print(main_string.count(substring)) 
+Output: 
+The substring 'ab' occurs 7 times in the main string.
+7
+
+
+(b) Write a program to illustrate Dictionary operations ([ ], in, traversal) and  methods: keys (),values().items()
+
+Code: 
+# Creating a sample dictionary 
+sample_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4} 
+ 
+# Checking if a key exists in the dictionary 
+key_to_check = 'b' 
+if key_to_check in sample_dict: 
+    print(f'The key "{key_to_check}" exists in the dictionary.') 
+ 
+# Traversing the dictionary using a loop 
+print("Traversing the dictionary:") 
+for key, value in sample_dict.items(): 
+    print(f'Key: {key}, Value: {value}') 
+ 
+# Dictionary methods 
+keys_list = list(sample_dict.keys()) 
+values_list = list(sample_dict.values()) 
+items_list = list(sample_dict.items()) 
+ 
+print("\nUsing dictionary methods:") 
+print(f'Keys: {keys_list}') 
+print(f'Values: {values_list}') 
+print(f'Items: {items_list}')
+
+//OUTPUT:
+The key "b" exists in the dictionary.
+Traversing the dictionary:
+Key: a, Value: 1
+Key: b, Value: 2
+Key: c, Value: 3
+Key: d, Value: 4
+
+Using dictionary methods:
+Keys: ['a', 'b', 'c', 'd']
+Values: [1, 2, 3, 4]
+Items: [('a', 1), ('b', 2), ('c', 3), ('d', 4)]
